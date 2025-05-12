@@ -1,1 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wallpaper Gallery - HD Wallpapers</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function downloadImage(imageUrl, imageName) {
+      const link = document.createElement('a');
+      link.href = imageUrl;
+      link.download = imageName;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Wallpaper Gallery</h1>
+    <p>Get Random HD Wallpapers by Category</p>
+  </header>
 
+  <section class="wallpapers">
+    <div class="card">  
+      <h3>Cities</h3>
+      <img src="https://picsum.photos/2200/1320?City" alt="Cities">
+      <div class="buttons">
+        <a href="">Next</a>&nbsp
+        <button onclick="downloadImage('https://picsum.photos/2200/1320?City', 'cities.jpg')">Save Image</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Wallpapers</h3>
+      <img src="https://picsum.photos/2200/1320?wallpaper" alt="Wallpapers">
+      <div class="buttons">
+        <a href="">Next</a>&nbsp
+        <button onclick="downloadImage('https://picsum.photos/2200/1320?wallpaper', 'wallpaper.jpg')">Save Image</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Nature</h3>
+      <img src="https://picsum.photos/2200/1320/?nature" alt="Nature">
+      <div class="buttons">
+        <a href="">Next</a> &nbsp
+        <button onclick="downloadImage('https://picsum.photos/2200/1320/?nature', 'nature.jpg')" class="buttons">Save Image</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Sceneries</h3>
+      <img src="https://picsum.photos/2200/1320/?scenery" alt="Sceneries">
+      <div class="buttons">
+        <a href="">Next</a>&nbsp
+        <button onclick="downloadImage('https://picsum.photos/2200/1320/?scenery', 'scenery.jpg')">Save Image</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Mountains</h3>
+      <img src="https://picsum.photos/2200/1320/?mountains" alt="Mountains">
+      <div class="buttons">
+        <a href="">Next</a>&nbsp
+        <button onclick="downloadImage('https://picsum.photos/2200/1320/?mountains', 'mountains.jpg')">Save Image</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Antiques</h3>
+      <img src="https://picsum.photos/2200/1320/?antique" alt="Antiques">
+      <div class="buttons">
+        <a href="">Next</a>&nbsp
+        <button onclick="downloadImage('https://picsum.photos/2200/1320/?antique', 'antique.jpg')">Save Image</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Beaches</h3>
+      <img src="https://picsum.photos/2200/1320/?beach" alt="Beaches">
+      <div class="buttons">
+        <a href="">Next</a>&nbsp
+        <button onclick="downloadImage('https://picsum.photos/2200/1320/?beach', 'beach.jpg')">Save Image</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Animals</h3>
+      <img src="https://picsum.photos/2200/1320/?animals" alt="Animals">
+      <div class="buttons">
+        <a href="">Next</a>&nbsp
+        <button onclick="downloadImage('https://picsum.photos/2200/1320/?animals', 'animals.jpg')">Save Image</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Wallpaper Gallery</p>
+  </footer>
+</body>
+</html>
